@@ -1,4 +1,4 @@
 FUNCTION Main()
     QOut("Olá, Mundo!")
-    QOut("Bem-vindo(a) à Jornada DEV START!")
+    QOut("Bem-vindo(a) � Jornada DEV START!")
 RETURN NIL
