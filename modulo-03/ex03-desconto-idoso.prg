@@ -38,4 +38,4 @@ PROCEDURE Main()
     QOut("Total   : R$ " + Str(nTotal, 10, 2))
     QOut("=============================")
 
-RETURN
+RETURN NIL

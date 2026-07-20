@@ -12,4 +12,4 @@ FUNCTION Main()
     QOut("Admissao: " + DToC(dAdmissao))
     QOut("Depto: " + cDepto)
 
-RETURN NIL
+RETURN NIL 

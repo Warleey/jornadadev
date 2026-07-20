@@ -36,4 +36,4 @@ PROCEDURE Main()
 
     QOut("=============================")
 
-RETURN
+RETURN NIL

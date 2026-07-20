@@ -44,4 +44,4 @@ FUNCTION Main()
     nIMC := nPeso / (nAltura ^ 2)
     QOut("IMC: " + Str(nIMC, 10, 2))
 
-RETURN NIL
+RETURN NIL 

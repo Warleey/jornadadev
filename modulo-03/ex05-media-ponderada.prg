@@ -29,4 +29,4 @@ PROCEDURE Main()
     QOut("Media: " + Str(nMedia, 10, 2))
     QOut("==========================")
 
-RETURN
+RETURN NIL
