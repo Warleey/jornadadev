@@ -26,7 +26,7 @@ Após confirmar a inclusão, a tabela passou a fazer parte do Dicionário de Dad
 
 ### Print da criação da tabela
 
-![Tabela ZA1 criada no Configurador](evidencias\tabela-criada.png)
+![Tabela ZA1 criada no Configurador](evidencias/tabela-criada.png)
 
 ---
 
@@ -43,7 +43,7 @@ Após criar a tabela, foi realizado o cadastro dos campos que irão compor a est
 
 ### Print da estrutura de campos
 
-![Estrutura de campos da ZA1](evidencias\tabela-estrutura.png)
+![Estrutura de campos da ZA1](evidencias/tabela-estrutura.png)
 
 ---
 
@@ -60,7 +60,7 @@ Durante a conferência foi possível visualizar a tabela ZA1 contendo os seguint
 
 ### Print da conferência no MPSDU
 
-![Conferência no MPSDU](evidencias\tabela-mpsdu.png)
+![Conferência no MPSDU](evidencias/tabela-mpsdu.png)
 
 ---
 

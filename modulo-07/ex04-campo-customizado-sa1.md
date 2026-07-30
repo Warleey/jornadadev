@@ -27,7 +27,7 @@ Após salvar, o novo campo passou a fazer parte da estrutura da tabela SA1.
 
 ### Print do Configurador
 
-![Campo A1_XAPELID no Configurador](evidencias\tabela-sa-configurada.png)
+![Campo A1_XAPELID no Configurador](evidencias/tabela-sa-configurada.png)
 
 ---
 
@@ -41,7 +41,7 @@ Foi realizado um teste preenchendo o campo para confirmar seu funcionamento.
 
 ### Print do SmartClient
 
-![Campo Apelido no SmartClient](evidencias\tabela-sa-validacao.png)
+![Campo Apelido no SmartClient](evidencias/tabela-sa-validacao.png)
 
 ---
 
