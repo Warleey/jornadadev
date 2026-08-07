@@ -1,0 +1,7 @@
+Tabela,Ordem,Expressao,Descricao,Unico
+ZZ1,1,ZZ1_FILIAL + ZZ1_CODIGO,Chave primaria,Sim
+ZZ1,2,ZZ1_FILIAL + ZZ1_FORNEC + ZZ1_LOJAFO,Por fornecedor,Nao
+ZZ1,3,ZZ1_FILIAL + DTOS(ZZ1_VALCER),Por validade do certificado,Nao
+ZZ2,1,ZZ2_FILIAL + ZZ2_CONFOR + DTOS(ZZ2_DATA) + ZZ2_HORA,Chave primaria,Sim
+ZZ2,2,ZZ2_FILIAL + ZZ2_FORNEC + ZZ2_LOJAFO + DTOS(ZZ2_DATA),Por fornecedor e data,Nao
+ZZ2,3,ZZ2_FILIAL + DTOS(ZZ2_DATA),Por data,Nao
