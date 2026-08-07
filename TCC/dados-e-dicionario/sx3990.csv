@@ -1,0 +1,24 @@
+Campo,Titulo,Tipo,Tamanho,Decimal,Contexto,Obrigatorio,Validacao,Consulta,Gatilho,PictureMascara,Help
+ZZ1_FILIAL,Filial,C,2,0,Real,Nao,,,,,Filial do registro
+ZZ1_CODIGO,Codigo,C,6,0,Real,Sim,,,,,Codigo unico do controle de fornecimento
+ZZ1_FORNEC,Cod. Fornecedor,C,6,0,Real,Sim,"ExistCpo(""SA2"",xFilial(""SA2"")+M->ZZ1_FORNEC+M->ZZ1_LOJAFO,1)",SA2,ZZ1_NOMEFO,,Codigo do fornecedor - deve existir no cadastro SA2
+ZZ1_LOJAFO,Loja Fornecedor,C,2,0,Real,Sim,,,,,Loja do fornecedor
+ZZ1_NOMEFO,Nome Fornecedor,C,40,0,Virtual,Nao,,,,,Nome buscado automaticamente da SA2
+ZZ1_CERTIF,Dados Certificado,C,256,0,Real,Sim,,,,,Dados e numero do certificado de qualidade
+ZZ1_VALCER,Val. Certificado,D,8,0,Real,Sim,"M->ZZ1_VALCER >= dDataBase",,,,Validade do certificado - nao pode ser inferior a data atual
+ZZ1_TOLERA,Tolerancia (%),N,5,2,Real,Sim,"M->ZZ1_TOLERA >= 0 .AND. M->ZZ1_TOLERA <= 100",,,@9999.99,Percentual de tolerancia entre 0 e 100
+ZZ1_TOTOK,Qtd. Conforme,N,12,2,Real,Nao,,,,,Quantidade total de itens conformes
+ZZ1_TOTNOK,Qtd. Nao Conforme,N,12,2,Real,Nao,,,,,Quantidade total de itens nao conformes
+ZZ2_FILIAL,Filial,C,2,0,Real,Nao,,,,,Filial do registro
+ZZ2_CONFOR,Controle (ZZ1),C,6,0,Real,Sim,"ExistCpo(""ZZ1"",xFilial(""ZZ1"")+M->ZZ2_CONFOR,1)",ZZ1,ZZ2_FORNEC,,Codigo do controle de fornecimento - deve existir na ZZ1
+ZZ2_FORNEC,Cod. Fornecedor,C,6,0,Real,Nao,,,,,Codigo do fornecedor preenchido automaticamente via gatilho
+ZZ2_LOJAFO,Loja Fornecedor,C,2,0,Real,Nao,,,,,Loja do fornecedor preenchida automaticamente via gatilho
+ZZ2_NOMEFO,Nome Fornecedor,C,40,0,Virtual,Nao,,,,,Nome do fornecedor buscado automaticamente da SA2
+ZZ2_DATA,Data Ocorrencia,D,8,0,Real,Sim,"M->ZZ2_DATA <= dDataBase",,,,Data da ocorrencia - nao pode ser futura
+ZZ2_HORA,Hora,C,5,0,Real,Nao,,,,,Hora da ocorrencia preenchida automaticamente na inclusao
+ZZ2_CODPRO,Produto,C,15,0,Real,Sim,"ExistCpo(""SB1"",xFilial(""SB1"")+M->ZZ2_CODPRO,1)",SB1,,,Codigo do produto - deve existir no cadastro SB1
+ZZ2_QTDOK,Qtde. Conforme,N,12,0,Real,Sim,,,,,Quantidade de itens conformes na entrega
+ZZ2_QTDNOK,Qtde. Nao Conforme,N,12,0,Real,Sim,,,,,Quantidade de itens nao conformes na entrega
+ZZ2_VLRUNI,Valor Unitario,N,12,2,Real,Sim,,,,@9999999999.99,Valor unitario do produto entregue
+ZZ2_TOTOK,R$ Conforme,N,12,2,Virtual,Nao,,,,,Valor total conforme - ZZ2_QTDOK x ZZ2_VLRUNI
+ZZ2_TOTNOK,R$ Nao Conforme,N,12,2,Virtual,Nao,,,,,Valor total nao conforme - ZZ2_QTDNOK x ZZ2_VLRUNI
